@@ -1,4 +1,4 @@
-Right now, these notes connect with prior knowledge described in [Recap] in order to answer [Objective]. They will later grow independent.
+Right now, these notes connect with prior knowledge described in [Recap] in order to answer [Objective] and are written in Obsidian md. They will later grow independent and become html. Before that, please see `.pdf` of obsidian looks.
 
 # differential-forms-in-chalk
 
@@ -30,7 +30,7 @@ There are 3 options + 1 example to explain what this function does.
 ### Option 1. Formula. 
 
 Formula left hand side:
-[image]
+![[Pasted image 20230107222747.png | 400]]
 
 Formula right hand side:
 $$a_k.$$
@@ -45,7 +45,7 @@ The $dx_k$ function picks out the $k$th component in its input.
 Every $dx_k$ is a linear function.
 
 What happens when each $dx_k$ takes in a unit vector:
-[image]
+![[Pasted image 20230107223023.png | 400]]
 
 
 ### Option 3. This function is a projection.
@@ -85,13 +85,22 @@ Find $\omega(<8,15,17>)$ where $\omega = 3 \; dx_1 + 7 \; dx_2$.
 > Ans: $3\cdot 8 + 7\cdot 15 = 129$
 
 
+
 ## Answer: 1-forms are component-y basis elements.
 
 ### Dictionary
-[image]
+
+![[Pasted image 20230107223144.png | 400]]
 
 ### The associated 1-form of a vector is called its "work form."
-[image]
+
+![[Pasted image 20230107223232.png | 400]]
+
+Reiterate: 
+If $\omega$ is the work form (1-form counterpart) of $\mathbf{x}$, then
+$$
+\mathbf{x} \cdot \mathbf{u} = \omega(\mathbf{u}).
+$$
 
 ## Definition: 2-form as a function that takes in 2 vectors.
 
@@ -100,22 +109,31 @@ Find $\omega(<8,15,17>)$ where $\omega = 3 \; dx_1 + 7 \; dx_2$.
 ### Option 1. Formula.
 
 Formula left hand side:
-[image]
+![[Pasted image 20230107223741.png | 400]]
 
 Formula right hand side:
-[image]
+![[Pasted image 20230107223848.png | 400]]
 
 This function is a determinant.
 We rely on a matrix of 1-forms acting on 1 vector.
 
-Mnemonics:
+
+#### Mnemonics
+
 - For a matrix to be determinant-able, it has to be square.
-	[image]
+		![[Pasted image 20230107223933.png | 400]]
 	Thus 2-forms require 2 vectors for input.
 	
 - If there are identical rows, the determinant is $0$.
 	For $\omega = dx_k \wedge dx_k$,
-	[image] 
+
+$$
+\omega(\vec{u},\vec{v}) = \begin{pmatrix}
+u_k & v_k \\
+u_k & v_k
+\end{pmatrix},
+$$
+	so it has identical rows.
 
 
 ### Option 2. Generalize a linear function to take more than 1 input.
@@ -145,10 +163,10 @@ $dx_i \wedge dx_j(\mathbf{u}, \mathbf{v})$ is the area of the parallelogram span
 ### Option 4 (Example). Find $dx_1 \wedge dx_2 (<8,15,17>, <3,4,5>)$. Ans: $-13$.
 
 
-## Answer: 1-forms are component-y basis elements.
+## Answer: 2-forms are component-y basis elements.
 
 ### Dictionary
 [image]
 
-### The associated 1-form of a vector is called its "flux form."
+### The associated 2-form of a vector is called its "flux form."
 [image]
